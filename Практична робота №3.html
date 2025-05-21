@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Моє портфоліо</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00aced;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        img.profile {
+            width: 150px;
+            border-radius: 50%;
+            border: 3px solid #00aced;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: box-shadow 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        footer {
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            img.profile {
+                width: 100px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 style="color: #00aced;">Привіт! Я — Павло, веброзробник</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Про мене</a></li>
+                <li><a href="#skills">Навички</a></li>
+                <li><a href="#projects">Проєкти</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>Про мене</h2>
+            <img src="selfphoto.jpg" alt="Фото профілю" class="profile">
+            <p>Я — фахівець із фронтенду, який спеціалізується на створенні адаптивних веб-інтерфейсів. Маю досвід з HTML, CSS, JavaScript та бібліотекою React.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Навички</h2>
+            <ul>
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript / React</li>
+                <li>Git та GitHub</li>
+                <li>Адаптивна верстка</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Проєкти</h2>
+            <div class="card">
+                <h3>Сайт для ресторану</h3>
+                <p>Мобільна верстка, меню, інтеграція з Google Maps.</p>
+            </div>
+            <div class="card">
+                <h3>Портфоліо-фотогалерея</h3>
+                <p>Анімації, фільтрація фото, модальні вікна.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Контакти</h2>
+            <p>Зв'язатися зі мною можна через <a href="mailto:st9151053@stud.duikt.edu.ua">email</a> або <a href="https://t.me/ssgofficial2" target="_blank">Telegram</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Павло Розробник. Усі права захищено.</p>
+    </footer>
+
+</body>
+</html>
